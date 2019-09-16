@@ -36,7 +36,7 @@ git checkout lockheed_quads
 
 	- Install dependencies for min snap motion planner
 	```
-	sudo apt-get install python-wstool python-catkin-tools ros-indigo-cmake-modules
+	sudo apt-get install python-wstool python-catkin-tools ros-kinetic-cmake-modules
 	sudo apt-get install libsuitesparse-dev
 	cd ~
 	git clone https://github.com/RainerKuemmerle/g2o
