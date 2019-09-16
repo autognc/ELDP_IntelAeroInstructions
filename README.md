@@ -49,7 +49,6 @@ git checkout lockheed_quads
 	git clone https://github.com/AkellaSummerResearch/mav_comm.git
 	git clone https://github.com/AkellaSummerResearch/catkin_simple.git
 	git clone https://github.com/AkellaSummerResearch/eigen_catkin.git
-	git clone https://github.com/radionavlab/mg_msgs.git
 	cd ~/lockheed_ws
 	catkin_make
 
