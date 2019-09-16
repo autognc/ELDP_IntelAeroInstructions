@@ -26,6 +26,7 @@ catkin_make -DCATKIN_ENABLE_TESTING=False -DCMAKE_BUILD_TYPE=Release
 
 ```
 cd ~/catkin_ws/src
+git clone https://github.com/radionavlab/mg_msgs.git
 git clone https://github.com/radionavlab/px4_control.git
 cd ~/catkin_ws/src/px4_control
 git checkout lockheed_quads
@@ -39,7 +40,6 @@ git checkout lockheed_quads
 	cd ~/catkin_ws/src
 	git clone https://github.com/AkellaSummerResearch/batch_pose_estimator.git
 	git clone https://github.com/marcelinomalmeidan/image_filters.git
-	git clone https://github.com/radionavlab/mg_msgs.git
 	git clone https://github.com/ros-perception/image_transport_plugins.git
 	git clone https://github.com/AkellaSummerResearch/pcl_compression.git
 	cd ~/catkin_ws
