@@ -34,6 +34,47 @@ git checkout lockheed_quads
 
 7) Install all other ROS nodes
 
+	- Install dependencies for min snap motion planner
+	```
+	sudo apt-get install python-wstool python-catkin-tools ros-indigo-cmake-modules
+	sudo apt-get install libsuitesparse-dev
+	cd ~
+	git clone https://github.com/RainerKuemmerle/g2o
+	mkdir g2o/build
+	cd build
+	cmake ../
+	make
+	cd ~/lockheed_ws/src
+	git clone https://github.com/AkellaSummerResearch/nlopt.git 
+	git clone https://github.com/AkellaSummerResearch/mav_comm.git
+	git clone https://github.com/AkellaSummerResearch/catkin_simple.git
+	git clone https://github.com/AkellaSummerResearch/eigen_catkin.git
+	git clone https://github.com/radionavlab/mg_msgs.git
+	cd ~/lockheed_ws
+	catkin_make
+
+	cd ~/lockheed_ws/src
+	git clone https://github.com/AkellaSummerResearch/glog_catkin.git
+	cd glog_catkin
+	git checkout 314b53e 
+	cd ~/lockheed_ws
+	catkin_make
+
+	cd ~/lockheed_ws/src
+	git clone https://github.com/AkellaSummerResearch/eigen_checks.git
+	cd ~/lockheed_ws
+	catkin_make
+	```
+
+	- Install min snap motion planner
+
+	```
+	cd ~/lockheed_ws/src
+	git clone https://github.com/AkellaSummerResearch/mav_trajectory_generation.git
+	cd ~/lockheed_ws
+	catkin_make
+	```
+
 	- Nodes to be installed within catkin_ws:
 
 	```
