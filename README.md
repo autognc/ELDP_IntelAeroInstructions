@@ -44,33 +44,33 @@ git checkout lockheed_quads
 	cd build
 	cmake ../
 	make
-	cd ~/lockheed_ws/src
+	cd ~/catkin_ws/src
 	git clone https://github.com/AkellaSummerResearch/nlopt.git 
 	git clone https://github.com/AkellaSummerResearch/mav_comm.git
 	git clone https://github.com/AkellaSummerResearch/catkin_simple.git
 	git clone https://github.com/AkellaSummerResearch/eigen_catkin.git
-	cd ~/lockheed_ws
+	cd ~/catkin_ws
 	catkin_make
 
-	cd ~/lockheed_ws/src
+	cd ~/catkin_ws/src
 	git clone https://github.com/AkellaSummerResearch/glog_catkin.git
 	cd glog_catkin
 	git checkout 314b53e 
-	cd ~/lockheed_ws
+	cd ~/catkin_ws
 	catkin_make
 
-	cd ~/lockheed_ws/src
+	cd ~/catkin_ws/src
 	git clone https://github.com/AkellaSummerResearch/eigen_checks.git
-	cd ~/lockheed_ws
+	cd ~/catkin_ws
 	catkin_make
 	```
 
 	- Install min snap motion planner
 
 	```
-	cd ~/lockheed_ws/src
+	cd ~/catkin_ws/src
 	git clone https://github.com/AkellaSummerResearch/mav_trajectory_generation.git
-	cd ~/lockheed_ws
+	cd ~/catkin_ws
 	catkin_make
 	```
 
