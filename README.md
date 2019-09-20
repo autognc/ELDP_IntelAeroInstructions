@@ -134,3 +134,23 @@ sudo make install
 	- Right-click on terminator window, click on Preferences, within Layouts add Custom command to desired window for barrier to run on. You will need two windows: on one, choose the following command (makes mouse visible on startup) ```gsettings set org.gnome.settings-daemon.plugins.cursor active false; bash```, while the following command goes on the second one: ```./barrier/build/bin/barrierc -f --enable-crypto 192.168.1.200; bash```
 
 	- Make terminator open on startup: open ```Startup Applications``` and click on Add. On the desired command, just type ```terminator```, which is the command line to start Terminator.
+
+
+8) Update Px4
+
+```
+cd ~/Downloads
+git clone https://github.com/PX4/Firmware.git
+cd Firmware
+git checkout v1.9.0
+make intel_aerofc-v1_default
+```
+
+- Copy the file `/home/aero/Downloads/Firmware/build/intel_aerofc-v1_default/intel_aerofc-v1_default.px4` into `/etc/aerofc/px4` (note that the file might already exist in there, so you want to rename the old file if you want to have a backup of the original px4 version for the Intel Aero.
+
+```
+cd /etc/aerofc/px4/
+sudo aerofc-update.sh intel_aerofc-v1_default.px4
+```
+
+Note: a compiled version of `intel_aerofc-v1_default.px4` can be found in this repository within `Files/intel_aerofc-v1_default.px4`.
