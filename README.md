@@ -138,6 +138,10 @@ sudo make install
 
 8) Update Px4
 
+- Download the file: https://raw.githubusercontent.com/PX4/Devguide/v1.9.0/build_scripts/ubuntu_sim_nuttx.sh
+
+- Run the script: `source ubuntu_sim_nuttx.sh`
+
 ```
 cd ~/Downloads
 git clone https://github.com/PX4/Firmware.git
