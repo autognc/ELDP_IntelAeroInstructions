@@ -15,7 +15,7 @@ NOTE: Give yourself a full day of work to complete the instructions below!
 ```
 sudo apt-get install ros-kinetic-ddynamic-reconfigure
 cd ~/catkin_ws/src
-git clone https://github.com/intel-ros/realsense.git
+git clone https://github.com/autognc/realsense-ros
 cd ~/catkin_ws/src/realsense
 git checkout `git tag | sort -V | grep -P "^\d+\.\d+\.\d+" | tail -1`
 cd ~/catkin_ws
