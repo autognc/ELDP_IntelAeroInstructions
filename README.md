@@ -158,3 +158,7 @@ sudo aerofc-update.sh intel_aerofc-v1_default.px4
 ```
 
 Note: a compiled version of `intel_aerofc-v1_default.px4` can be found in this repository within `Files/intel_aerofc-v1_default.px4`.
+
+9) Log Px4 flights
+
+- Px4 Flights are automatically logged in `/var/lib/mavlink-router`. You can upload the `*.ulg` files into [this link](https://logs.px4.io/) to visualize plots of the drone's data during flight.
