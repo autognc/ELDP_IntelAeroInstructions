@@ -43,7 +43,7 @@ git checkout lockheed_quads
 	cd ~
 	git clone https://github.com/RainerKuemmerle/g2o
 	mkdir g2o/build
-	cd build
+	cd g20/build
 	cmake ../
 	make
 	cd ~/catkin_ws/src
