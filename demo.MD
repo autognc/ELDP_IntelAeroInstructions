@@ -79,7 +79,7 @@ roslaunch realsense2_camera r200_nodelet_rgbd.launch
 4) Run ORB_SLAM2
 
 ```
-roslaunch ORB_SLAM2 rgbd_ns_r200.launch
+roslaunch ORB_SLAM2 rgbd_ns_no_visualization_r200.launch
 ```
 
 5) Desktop: joystick node
@@ -91,7 +91,7 @@ roslaunch joy joy.launch
 6) Desktop: rviz visualization
 
 ```
-rviz -d ~/lockheed_ws/src/px4_control/Extras/Sauron.rviz
+rviz -d ~/lockheed_ws/src/px4_control/Extras/SauronInspection.rviz
 ```
 
 7) Mission planner
