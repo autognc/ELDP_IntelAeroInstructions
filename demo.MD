@@ -60,9 +60,9 @@ rosbag play r200_rover.bag
 
 ## Run Mission Planner Simulation
 
-1) T265 + Mavros
+1) T265 + Mavros + R200 + ORB_SLAM2 + Portrait Mode
 ```
-roslaunch odom_relay sauron.launch
+roslaunch realsense2_camera inspection.launch
 ```
 
 2) px4_control + joystick relay
@@ -70,31 +70,19 @@ roslaunch odom_relay sauron.launch
 roslaunch px4_control sauron_sim.launch
 ```
 
-3) Launch realsense R200 node (also downsamples color images)
-
-```
-roslaunch realsense2_camera r200_nodelet_rgbd.launch
-```
-
-4) Run ORB_SLAM2
-
-```
-roslaunch ORB_SLAM2 rgbd_ns_no_visualization_r200.launch
-```
-
-5) Desktop: joystick node
+3) Desktop: joystick node
 
 ```
 roslaunch joy joy.launch
 ```
 
-6) Desktop: rviz visualization
+4) Desktop: rviz visualization
 
 ```
 rviz -d ~/lockheed_ws/src/px4_control/Extras/SauronInspection.rviz
 ```
 
-7) Mission planner
+5) Mission planner
 
 ```
 roslaunch mission_planner rover_inspection.launch
