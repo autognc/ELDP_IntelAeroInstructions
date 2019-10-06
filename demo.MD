@@ -67,7 +67,7 @@ roslaunch realsense2_camera inspection.launch
 
 2) px4_control + joystick relay
 ```
-roslaunch px4_control sauron_sim.launch
+roslaunch px4_control sauron.launch
 ```
 
 3) Desktop: joystick node
