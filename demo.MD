@@ -1,5 +1,11 @@
 # Demo launch
 
+## Check if firmware is properly installed
+
+```
+sudo aero-get-version.py
+```
+
 ## Fly with px4_control
 
 1) T265 + Mavros
