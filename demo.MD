@@ -21,7 +21,7 @@ roslaunch joy joy.launch
 4) Desktop: rviz visualization (px4_control)
 
 ```
-rviz -d ~/lockheed_ws/src/px4_control/Extras/Sauron.rviz
+rviz -d ~/lockheed_ws/src/px4_control/Extras/SauronInspection.rviz
 ```
 
 ## Record bags for ORB_SLAM2
