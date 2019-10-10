@@ -34,86 +34,7 @@ cd ~/catkin_ws/src/px4_control
 git checkout lockheed_quads
 ```
 
-7) Install all other ROS nodes
-
-	- Install dependencies for min snap motion planner
-	```
-	sudo apt-get install python-wstool python-catkin-tools ros-kinetic-cmake-modules
-	sudo apt-get install libsuitesparse-dev
-	cd ~
-	git clone https://github.com/RainerKuemmerle/g2o
-	mkdir g2o/build
-	cd g20/build
-	cmake ../
-	make
-	cd ~/catkin_ws/src
-	git clone https://github.com/AkellaSummerResearch/nlopt.git 
-	git clone https://github.com/AkellaSummerResearch/mav_comm.git
-	git clone https://github.com/AkellaSummerResearch/catkin_simple.git
-	git clone https://github.com/AkellaSummerResearch/eigen_catkin.git
-	cd ~/catkin_ws
-	catkin_make
-
-	cd ~/catkin_ws/src
-	git clone https://github.com/AkellaSummerResearch/glog_catkin.git
-	cd ~/catkin_ws
-	catkin_make
-
-	cd ~/catkin_ws/src
-	git clone https://github.com/AkellaSummerResearch/eigen_checks.git
-	cd ~/catkin_ws
-	catkin_make
-	```
-
-	- Install min snap motion planner
-
-	```
-	cd ~/catkin_ws/src
-	git clone https://github.com/AkellaSummerResearch/mav_trajectory_generation.git
-	cd ~/catkin_ws
-	catkin_make
-	```
-
-	- Nodes to be installed within catkin_ws:
-
-	```
-	cd ~/catkin_ws/src
-	git clone https://github.com/AkellaSummerResearch/batch_pose_estimator.git
-	git clone https://github.com/marcelinomalmeidan/image_filters.git
-	git clone https://github.com/ros-perception/image_transport_plugins.git
-	git clone https://github.com/AkellaSummerResearch/pcl_compression.git
-	cd ~/catkin_ws
-	catkin_make -DCMAKE_BUILD_TYPE=Release
-	```
-
-	- Install ORB-SLAM2 (this is not within catkin_ws)
-
-	- Add the following line to ```~/.bashrc```:
-
-	```
-	export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:~/ORB_SLAM2/Examples/ROS
-	```	
-
-	- Install ORB-SLAM2
-
-	```
-	sudo apt-get install libglew-dev
-	cd ~
-	git clone https://github.com/stevenlovegrove/Pangolin.git
-	cd Pangolin
-	mkdir build
-	cd build
-	cmake ..
-	cmake --build .
-	cd ~
-	git clone https://github.com/marcelinomalmeidan/ORB_SLAM2
-	source ~/.bashrc
-	cd ORB_SLAM2
-	./build.sh
-	```
-
-
-8) Install barrier (optional: barrier allows mouse and keyboard on the jetson to be commanded within the network):
+7) Install barrier (optional: barrier allows mouse and keyboard on the jetson to be commanded within the network):
 
 ```
 sudo apt install git cmake make xorg-dev g++ libcurl4-openssl-dev \
@@ -164,3 +85,85 @@ Note: a compiled version of `intel_aerofc-v1_default.px4` can be found in this r
 9) Log Px4 flights
 
 - Px4 Flights are automatically logged in `/var/lib/mavlink-router`. You can upload the `*.ulg` files into [this link](https://logs.px4.io/) to visualize plots of the drone's data during flight.
+
+
+10) Install all other ROS nodes
+
+- Install dependencies for min snap motion planner
+
+	```
+	sudo apt-get install python-wstool python-catkin-tools ros-kinetic-cmake-modules
+	sudo apt-get install libsuitesparse-dev
+	cd ~
+	git clone https://github.com/RainerKuemmerle/g2o
+	mkdir g2o/build
+	cd g20/build
+	cmake ../
+	make
+	cd ~/catkin_ws/src
+	git clone https://github.com/AkellaSummerResearch/nlopt.git 
+	git clone https://github.com/AkellaSummerResearch/mav_comm.git
+	git clone https://github.com/AkellaSummerResearch/catkin_simple.git
+	git clone https://github.com/AkellaSummerResearch/eigen_catkin.git
+	cd ~/catkin_ws
+	catkin_make
+
+	cd ~/catkin_ws/src
+	git clone https://github.com/AkellaSummerResearch/glog_catkin.git
+	cd ~/catkin_ws
+	catkin_make
+
+	cd ~/catkin_ws/src
+	git clone https://github.com/AkellaSummerResearch/eigen_checks.git
+	cd ~/catkin_ws
+	catkin_make
+	```
+
+- Install min snap motion planner
+
+	```
+	cd ~/catkin_ws/src
+	git clone https://github.com/AkellaSummerResearch/mav_trajectory_generation.git
+	cd ~/catkin_ws
+	catkin_make
+	```
+
+- Nodes to be installed within catkin_ws:
+
+	```
+	cd ~/catkin_ws/src
+	git clone https://github.com/AkellaSummerResearch/batch_pose_estimator.git
+	git clone https://github.com/marcelinomalmeidan/image_filters.git
+	git clone https://github.com/ros-perception/image_transport_plugins.git
+	git clone https://github.com/AkellaSummerResearch/pcl_compression.git
+	cd ~/catkin_ws
+	catkin_make -DCMAKE_BUILD_TYPE=Release
+	```
+
+- Install ORB-SLAM2 (this is not within catkin_ws)
+
+	- Add the following line to ```~/.bashrc```:
+
+	```
+	export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:~/ORB_SLAM2/Examples/ROS
+	```	
+
+	- Install ORB-SLAM2
+
+	```
+	sudo apt-get install libglew-dev
+	cd ~
+	git clone https://github.com/stevenlovegrove/Pangolin.git
+	cd Pangolin
+	mkdir build
+	cd build
+	cmake ..
+	cmake --build .
+	cd ~
+	git clone https://github.com/marcelinomalmeidan/ORB_SLAM2
+	source ~/.bashrc
+	cd ORB_SLAM2
+	./build.sh
+	```
+
+
