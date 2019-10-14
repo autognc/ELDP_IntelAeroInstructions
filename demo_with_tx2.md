@@ -32,16 +32,16 @@ rviz -d ~/lockheed_ws/src/px4_control/Extras/SauronInspection.rviz
 
 ## Record bags for ORB_SLAM2
 
-1) Launch realsense R200 node (also downsamples color images)
+1) Launch realsense D435 node (TX2)
 
 ```
-roslaunch realsense2_camera r200_nodelet_rgbd.launch
+roslaunch realsense2_camera rs_slam_ns.launch
 ```
 
 2) Record bag
 
 ```
-rosbag record /Sauron/camera/color/image_raw_low_freq /Sauron/camera/depth_registered/image_raw -O r200_rover
+rosbag record /Sauron/camera/color/image_raw /Sauron/camera/depth_registered/image_raw -O rover_map
 ```
 
 ## Create map with ORB_SLAM2
@@ -49,7 +49,7 @@ rosbag record /Sauron/camera/color/image_raw_low_freq /Sauron/camera/depth_regis
 1) Run ORB_SLAM2
 
 ```
-roslaunch ORB_SLAM2 rgbd_ns_r200.launch
+roslaunch ORB_SLAM2 rgbd_ns.launch
 ```
 
 2) Make sure that ORB_SLAM2 is mapping, not only localizing
@@ -66,29 +66,35 @@ rosbag play r200_rover.bag
 
 ## Run Mission Planner Simulation
 
-1) T265 + Mavros + R200 + ORB_SLAM2 + Portrait Mode
+1) T265 + Mavros (Intel Aero)
 ```
-roslaunch realsense2_camera inspection.launch
+roslaunch odom_relay sauron.launch
 ```
 
-2) px4_control + joystick relay
+2) D435 + ORB_SLAM2 + Portrait mode (TX2)
+
+```
+roslaunch ORB_SLAM2 rgbd_ns.launch
+```
+
+3) px4_control + joystick relay (Intel Aero)
 ```
 roslaunch px4_control sauron.launch
 ```
 
-3) Desktop: joystick node
+4) Joystick node (Desktop)
 
 ```
 roslaunch joy joy.launch
 ```
 
-4) Desktop: rviz visualization
+4) Rviz visualization (Desktop)
 
 ```
 rviz -d ~/lockheed_ws/src/px4_control/Extras/SauronInspection.rviz
 ```
 
-5) Mission planner
+5) Mission planner (Desktop)
 
 ```
 roslaunch mission_planner rover_inspection.launch
