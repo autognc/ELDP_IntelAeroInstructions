@@ -32,6 +32,8 @@ git clone https://github.com/radionavlab/mg_msgs.git
 git clone https://github.com/radionavlab/px4_control.git
 cd ~/catkin_ws/src/px4_control
 git checkout lockheed_quads
+cd ~/catkin_ws
+catkin_make
 ```
 
 7) Install barrier (optional: barrier allows mouse and keyboard on the jetson to be commanded within the network):
