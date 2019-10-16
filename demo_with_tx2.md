@@ -38,7 +38,7 @@ rviz -d ~/lockheed_ws/src/px4_control/Extras/SauronInspection.rviz
 roslaunch realsense2_camera rs_slam_ns.launch
 ```
 
-2) Record bag
+2) Record bag (TX2)
 
 ```
 rosbag record /Sauron/camera/color/image_raw /Sauron/camera/depth_registered/image_raw -O rover_map
