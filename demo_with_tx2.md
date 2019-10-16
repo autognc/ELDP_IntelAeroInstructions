@@ -49,7 +49,7 @@ rosbag record /Sauron/camera/color/image_raw /Sauron/camera/depth_registered/ima
 1) Run ORB_SLAM2
 
 ```
-roslaunch ORB_SLAM2 rgbd_ns.launch
+roslaunch ORB_SLAM2 rgbd_ns_no_visualization.launch
 ```
 
 2) Make sure that ORB_SLAM2 is mapping, not only localizing
