@@ -61,7 +61,7 @@ rosservice call /Sauron/RGBD/is_mapping_mode true
 3) Run bag
 
 ```
-rosbag play r200_rover.bag
+rosbag play rover_map.bag
 ```
 
 ## Run Mission Planner Simulation
@@ -74,7 +74,7 @@ roslaunch odom_relay sauron.launch
 2) D435 + ORB_SLAM2 + Portrait mode (TX2)
 
 ```
-roslaunch ORB_SLAM2 rgbd_ns.launch
+roslaunch ORB_SLAM2 rgbd_ns_no_visualization.launch
 ```
 
 3) px4_control + joystick relay (Intel Aero)
