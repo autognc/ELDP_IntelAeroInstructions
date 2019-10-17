@@ -74,7 +74,7 @@ roslaunch odom_relay sauron.launch
 2) D435 + ORB_SLAM2 + Portrait mode (TX2)
 
 ```
-roslaunch ORB_SLAM2 rgbd_ns_no_visualization.launch
+roslaunch ORB_SLAM2 rgbd_no_visualization.launch
 ```
 
 3) px4_control + joystick relay (Intel Aero)
