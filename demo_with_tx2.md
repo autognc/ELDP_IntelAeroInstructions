@@ -64,7 +64,7 @@ rosservice call /Sauron/RGBD/is_mapping_mode true
 rosbag play rover_map.bag
 ```
 
-## Run Mission Planner Simulation
+## Run Mission Planner Inspection
 
 1) T265 + Mavros (Intel Aero)
 ```
@@ -98,4 +98,40 @@ rviz -d ~/lockheed_ws/src/px4_control/Extras/SauronInspection.rviz
 
 ```
 roslaunch mission_planner rover_inspection.launch
+```
+
+## Run Mission Planner Collision Avoidance
+
+1) T265 + Mavros (Intel Aero)
+```
+roslaunch odom_relay sauron.launch
+```
+
+2) D435 + ORB_SLAM2 + Portrait mode (TX2)
+
+```
+roslaunch ORB_SLAM2 rgbd_no_visualization.launch
+```
+
+3) px4_control + joystick relay (Intel Aero)
+```
+roslaunch px4_control sauron.launch
+```
+
+4) Joystick node (Desktop)
+
+```
+roslaunch joy joy.launch
+```
+
+5) Rviz visualization (Desktop)
+
+```
+rviz -d ~/lockheed_ws/src/px4_control/Extras/SauronInspection.rviz
+```
+
+6) Mission planner (Desktop)
+
+```
+roslaunch mission_planner collision_avoidance_example.launch
 ```
