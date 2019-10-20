@@ -88,13 +88,13 @@ roslaunch px4_control sauron.launch
 roslaunch joy joy.launch
 ```
 
-4) Rviz visualization (Desktop)
+5) Rviz visualization (Desktop)
 
 ```
 rviz -d ~/lockheed_ws/src/px4_control/Extras/SauronInspection.rviz
 ```
 
-5) Mission planner (Desktop)
+6) Mission planner (Desktop)
 
 ```
 roslaunch mission_planner rover_inspection.launch
