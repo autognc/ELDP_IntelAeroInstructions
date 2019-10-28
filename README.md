@@ -84,9 +84,13 @@ sudo aerofc-update.sh intel_aerofc-v1_default.px4
 
 Note: a compiled version of `intel_aerofc-v1_default.px4` can be found in this repository within `Files/intel_aerofc-v1_default.px4`.
 
-9) Log Px4 flights
+9) Increase the speed for mavlink communication:
+
+- Edit the file `/etc/mavlink-router/main.conf`, and change the TCP speed to `TcpServerPort=256000`.
+
+10) Log Px4 flights
 
 - Px4 Flights are automatically logged in `/var/lib/mavlink-router`. You can upload the `*.ulg` files into [this link](https://logs.px4.io/) to visualize plots of the drone's data during flight.
 
 
-10) Flash the TX2 board as described in [here](https://github.com/autognc/ELDP_IntelAeroInstructions/blob/master/Flash_TX2).
+11) Flash the TX2 board as described in [here](https://github.com/autognc/ELDP_IntelAeroInstructions/blob/master/Flash_TX2).
