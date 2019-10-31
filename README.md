@@ -24,12 +24,13 @@ cd ~/catkin_ws
 catkin_make -DCATKIN_ENABLE_TESTING=False -DCMAKE_BUILD_TYPE=Release
 ```
 
-6) Install desired version of px4 control:
+6) Install desired version of px4 control, as well as odom_relay (relays odometry data from t265 to mavros):
 
 ```
 cd ~/catkin_ws/src
 git clone https://github.com/radionavlab/mg_msgs.git
 git clone https://github.com/radionavlab/px4_control.git
+git clone https://github.com/autognc/odom_relay
 cd ~/catkin_ws/src/px4_control
 git checkout lockheed_quads
 cd ~/catkin_ws
