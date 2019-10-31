@@ -166,6 +166,7 @@ sudo make install
 	git clone --recursive https://github.com/AkellaSummerResearch/darknet_ros.git
 	git clone https://github.com/ros-perception/image_transport_plugins.git
 	git clone https://github.com/AkellaSummerResearch/pcl_compression.git
+	git clone https://github.com/autognc/odom_relay
 	cd ~/catkin_ws
 	catkin_make -DCMAKE_BUILD_TYPE=Release
 	```
