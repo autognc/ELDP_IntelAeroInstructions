@@ -1,6 +1,6 @@
 # Demo launch
 
-This page assumes that you are running the T265 on the Intel Aero and D435 on the TX2. If this is not your setup, go to [this link](https://github.com/autognc/ELDP_IntelAeroInstructions/blob/master/demo_with_tx2_r200_t265.md).
+This page assumes that you are running the T265 on the TX2 and R200 on the Intel Aero.
 
 ## Check if firmware is properly installed
 

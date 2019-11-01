@@ -94,4 +94,4 @@ Note: a compiled version of `intel_aerofc-v1_default.px4` can be found in this r
 - Px4 Flights are automatically logged in `/var/lib/mavlink-router`. You can upload the `*.ulg` files into [this link](https://logs.px4.io/) to visualize plots of the drone's data during flight.
 
 
-11) Flash the TX2 board as described in [here](https://github.com/autognc/ELDP_IntelAeroInstructions/blob/master/Flash_TX2).
+11) Flash the TX2 board as described in [here](https://github.com/autognc/ELDP_IntelAeroInstructions/blob/master/Flash_TX2.md).
