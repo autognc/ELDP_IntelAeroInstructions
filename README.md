@@ -89,9 +89,13 @@ Note: a compiled version of `intel_aerofc-v1_default.px4` can be found in this r
 
 - Edit the file `/etc/mavlink-router/main.conf`, and change the TCP speed to `TcpServerPort=256000`.
 
-10) Log Px4 flights
+10) Disable wireless power saving
+
+The Aero board saves energy on Wifi by throttling it at times. In order to disable it, open `/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf` and change the `wifi.powersave` parameter from `3` to `2`. Values are 0 (use default), 1 (ignore/don't touch), 2 (disable) or 3 (enable).
+
+11) Log Px4 flights
 
 - Px4 Flights are automatically logged in `/var/lib/mavlink-router`. You can upload the `*.ulg` files into [this link](https://logs.px4.io/) to visualize plots of the drone's data during flight.
 
 
-11) Flash the TX2 board as described in [here](https://github.com/autognc/ELDP_IntelAeroInstructions/blob/master/Flash_TX2.md).
+12) Flash the TX2 board as described in [here](https://github.com/autognc/ELDP_IntelAeroInstructions/blob/master/Flash_TX2.md).
