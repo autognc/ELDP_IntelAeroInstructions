@@ -69,6 +69,23 @@ rosservice call /Sauron/RGBD/is_mapping_mode true
 rosbag play r200_rover.bag
 ```
 
+## Capture Waypoints
+
+1) Run ORB-SLAM2
+```
+roslaunch ORB_SLAM2 rgbd_ns_r200.launch
+```
+
+2) Run capture waypoints node (push enter to capture waypoins)
+```
+roslaunch capture_waypoints capture.launch
+```
+
+3) Run bag if not capturing images in real time
+```
+rosbag play r200_rover.bag
+```
+
 ## Run Mission Planner Inspection
 
 1) Mavros + R200 + ORB_SLAM2 + Portrait Mode (Intel Aero)
