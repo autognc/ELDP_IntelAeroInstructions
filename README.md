@@ -31,6 +31,7 @@ cd ~/catkin_ws/src
 git clone https://github.com/radionavlab/mg_msgs.git
 git clone https://github.com/radionavlab/px4_control.git
 git clone https://github.com/autognc/odom_relay
+git clone https://github.com/AkellaSummerResearch/pcl_compression.git
 cd ~/catkin_ws/src/px4_control
 git checkout lockheed_quads
 cd ~/catkin_ws
