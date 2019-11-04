@@ -105,20 +105,28 @@ Open `QGroundControl` (you can find it in the `Files` folder within this reposit
 
 - On the top right, click on `Tools`, then `Load from file...`. Add the file `aero.params`
 
+10) Calibrate the sensors on the drone
 
-10) Increase the speed for mavlink communication:
+- Open `QGroundControl`:
+```
+./Files/QGroundControl.AppImage
+```
+
+- On the top left corner, click on the three gears. Then, click on `Sensors`. Go through the procedure of calibrating the `Gyroscope`, `Accelerometer`, and `Level Horizon`.
+
+11) Increase the speed for mavlink communication:
 
 - Edit the file `/etc/mavlink-router/main.conf`, and change the TCP speed to `TcpServerPort=921600`.
 
-11) Disable wireless power saving
+12) Disable wireless power saving
 
 The Aero board saves energy on Wifi by throttling it at times. In order to disable it, open `/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf` and change the `wifi.powersave` parameter from `3` to `2`. Values are 0 (use default), 1 (ignore/don't touch), 2 (disable) or 3 (enable).
 
 Reboot the drone for these changes to go into effect.
 
-12) Log Px4 flights (this is not an instruction, this is a reference to where to find log data)
+13) Log Px4 flights (this is not an instruction, this is a reference to where to find log data)
 
 - Px4 Flights are automatically logged in `/var/lib/mavlink-router`. You can upload the `*.ulg` files into [this link](https://logs.px4.io/) to visualize plots of the drone's data during flight.
 
 
-12) Flash the TX2 board as described in [here](https://github.com/autognc/ELDP_IntelAeroInstructions/blob/master/Flash_TX2.md).
+14) Flash the TX2 board as described in [here](https://github.com/autognc/ELDP_IntelAeroInstructions/blob/master/Flash_TX2.md).
