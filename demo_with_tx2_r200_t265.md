@@ -40,7 +40,7 @@ rviz -d ~/lockheed_ws/src/px4_control/Extras/SauronInspection.rviz
 1) Launch realsense R200 node (Intel Aero - also downsamples color images)
 
 ```
-roslaunch realsense2_camera r200_nodelet_rgbd.launch
+roslaunch odom_relay r200_nodelet_rgbd.launch
 ```
 
 2) Record bag (TX2)
@@ -90,7 +90,7 @@ rosbag play r200_rover.bag
 
 1) Mavros + R200 + ORB_SLAM2 + Portrait Mode (Intel Aero)
 ```
-roslaunch realsense2_camera inspection_no_t265.launch
+roslaunch odom_relay inspection_no_t265.launch
 ```
 
 2) T265 (TX2)
@@ -125,7 +125,7 @@ roslaunch mission_planner rover_inspection.launch
 
 1) Mavros + R200 + ORB_SLAM2 + Portrait Mode (Intel Aero)
 ```
-roslaunch realsense2_camera inspection_no_t265.launch
+roslaunch odom_relay inspection_no_t265.launch
 ```
 
 2) T265 (TX2)
@@ -155,7 +155,7 @@ roslaunch mission_planner mapper_inspection.launch
 
 1) Mavros + R200 + ORB_SLAM2 + Portrait Mode (Intel Aero)
 ```
-roslaunch realsense2_camera inspection_no_t265.launch
+roslaunch odom_relay inspection_no_t265.launch
 ```
 
 2) T265 (TX2)
