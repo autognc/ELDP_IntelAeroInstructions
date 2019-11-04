@@ -121,6 +121,36 @@ rviz -d ~/lockheed_ws/src/px4_control/Extras/SauronInspection.rviz
 roslaunch mission_planner rover_inspection.launch
 ```
 
+## Map the environment (for collision avoidance)
+
+1) Mavros + R200 + ORB_SLAM2 + Portrait Mode (Intel Aero)
+```
+roslaunch realsense2_camera inspection_no_t265.launch
+```
+
+2) T265 (TX2)
+```
+roslaunch odom_relay sauron_t265.launch
+```
+
+3) Joystick node (Desktop)
+
+```
+roslaunch joy joy.launch
+```
+
+4) Rviz visualization (Desktop)
+
+```
+rviz -d ~/lockheed_ws/src/px4_control/Extras/SauronInspection.rviz
+```
+
+5) Mission planner (Desktop)
+
+```
+roslaunch mission_planner mapper_inspection.launch
+```
+
 ## Run Mission Planner Collision Avoidance
 
 1) Mavros + R200 + ORB_SLAM2 + Portrait Mode (Intel Aero)
