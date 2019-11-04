@@ -66,6 +66,15 @@ sudo make install
 
 8) Update Px4
 
+- NOTE: You can either compile Px4, or use the compiled version which is already in this repository. The compiled version of `intel_aerofc-v1_default.px4` can be found in this repository within `Files/intel_aerofc-v1_default.px4`. Copy this file into `/etc/aerofc/px4`, and execute:
+
+```
+cd /etc/aerofc/px4/
+sudo aerofc-update.sh intel_aerofc-v1_default.px4
+``` 
+
+The instructions below guide you on compiling `.px4` (in case you want to compile a different version)
+
 - Download the file: https://raw.githubusercontent.com/PX4/Devguide/v1.9.0/build_scripts/ubuntu_sim_nuttx.sh
 
 - Run the script: `source ubuntu_sim_nuttx.sh`
@@ -83,9 +92,7 @@ make intel_aerofc-v1_default
 ```
 cd /etc/aerofc/px4/
 sudo aerofc-update.sh intel_aerofc-v1_default.px4
-```
-
-Note: a compiled version of `intel_aerofc-v1_default.px4` can be found in this repository within `Files/intel_aerofc-v1_default.px4`.
+``` 
 
 9) Increase the speed for mavlink communication:
 
