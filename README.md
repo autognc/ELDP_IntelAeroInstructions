@@ -114,7 +114,9 @@ Open `QGroundControl` (you can find it in the `Files` folder within this reposit
 
 The Aero board saves energy on Wifi by throttling it at times. In order to disable it, open `/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf` and change the `wifi.powersave` parameter from `3` to `2`. Values are 0 (use default), 1 (ignore/don't touch), 2 (disable) or 3 (enable).
 
-12) Log Px4 flights
+Reboot the drone for these changes to go into effect.
+
+12) Log Px4 flights (this is not an instruction, this is a reference to where to find log data)
 
 - Px4 Flights are automatically logged in `/var/lib/mavlink-router`. You can upload the `*.ulg` files into [this link](https://logs.px4.io/) to visualize plots of the drone's data during flight.
 
