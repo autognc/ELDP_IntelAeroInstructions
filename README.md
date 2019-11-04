@@ -94,15 +94,27 @@ cd /etc/aerofc/px4/
 sudo aerofc-update.sh intel_aerofc-v1_default.px4
 ``` 
 
-9) Increase the speed for mavlink communication:
+9) Load Px4 parameters into the drone using QGroundControl
+
+Open `QGroundControl` (you can find it in the `Files` folder within this repository:
+```
+./Files/QGroundControl.AppImage
+```
+
+- On the top left corner, click on the three gears. Then, click on `parameters` (bottom left two gears).
+
+- On the top right, click on `Tools`, then `Load from file...`. Add the file `aero.params`
+
+
+10) Increase the speed for mavlink communication:
 
 - Edit the file `/etc/mavlink-router/main.conf`, and change the TCP speed to `TcpServerPort=921600`.
 
-10) Disable wireless power saving
+11) Disable wireless power saving
 
 The Aero board saves energy on Wifi by throttling it at times. In order to disable it, open `/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf` and change the `wifi.powersave` parameter from `3` to `2`. Values are 0 (use default), 1 (ignore/don't touch), 2 (disable) or 3 (enable).
 
-11) Log Px4 flights
+12) Log Px4 flights
 
 - Px4 Flights are automatically logged in `/var/lib/mavlink-router`. You can upload the `*.ulg` files into [this link](https://logs.px4.io/) to visualize plots of the drone's data during flight.
 
