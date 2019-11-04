@@ -8,7 +8,7 @@ This page assumes that you are running the T265 on the TX2 and R200 on the Intel
 sudo aero-get-version.py
 ```
 
-## Fly with px4_control
+## Fly with px4_control (Instructions for how to use px4_control using an xbox 360 controller can be found in [here](https://github.com/radionavlab/px4_control.git))
 
 1) Mavros (Intel Aero)
 ```
