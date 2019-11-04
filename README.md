@@ -19,7 +19,7 @@ sudo apt-get install ros-kinetic-ddynamic-reconfigure
 cd ~/catkin_ws/src
 git clone https://github.com/autognc/realsense-ros
 cd ~/catkin_ws/src/realsense
-git checkout 2.2.8
+git checkout lockheed
 cd ~/catkin_ws
 catkin_make -DCATKIN_ENABLE_TESTING=False -DCMAKE_BUILD_TYPE=Release
 ```
