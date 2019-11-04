@@ -51,7 +51,12 @@ catkin_make
 
 	```
 	export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:~/ORB_SLAM2/Examples/ROS
-	```	
+	```
+	
+	Source `~/.bashrc`:
+	```
+	source ~/.bashrc
+	```
 
 	- Install ORB-SLAM2
 
