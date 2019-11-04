@@ -96,7 +96,7 @@ sudo aerofc-update.sh intel_aerofc-v1_default.px4
 
 9) Increase the speed for mavlink communication:
 
-- Edit the file `/etc/mavlink-router/main.conf`, and change the TCP speed to `TcpServerPort=256000`.
+- Edit the file `/etc/mavlink-router/main.conf`, and change the TCP speed to `TcpServerPort=921600`.
 
 10) Disable wireless power saving
 
