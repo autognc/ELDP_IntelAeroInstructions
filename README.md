@@ -4,6 +4,12 @@ NOTE: Give yourself a full day of work to complete the instructions below!
 
 1) Flash Intel Aero board as described [in here](https://github.com/intel-aero/meta-intel-aero/wiki/90-(References)-OS-user-Installation) (do not install the drivers for the D435 camera!). When installing Ubuntu, make sure to install WITHOUT using the internet, otherwise some drivers will break.
 
+If you don't want the drone to create its own hotspot on boot, run the following command on Ubuntu:
+```
+nmcli c down hotspot
+```
+
+
 NOTE: When booting Ubuntu, DO NOT choose the most updated kernel version, you need to choose the Intel Aero kernel (it is actually the default one).
 
 2) Install [ROS Kinetic](https://github.com/intel-aero/meta-intel-aero/wiki/05-Autonomous-drone-programming-with-ROS) with Realsense ROS nodes.
