@@ -16,7 +16,9 @@ source ~/lockheed_ws/devel/setup.bash
 
 - Install dependencies for min snap motion planner
 ```
-sudo apt-get install python-wstool python-catkin-tools ros-kinetic-cmake-modules ros-kinetic-mavlink
+sudo apt-get install python-wstool python-catkin-tools ros-kinetic-cmake-modules ros-kinetic-mavlink ros-kinetic-mavros ros-kinetic-mavros-extras ros-kinetic-control-toolbox
+sudo apt-get install ros-kinetic-geographic-msgs
+sudo apt-get install geographiclib-* ros-kinetic-geographic-*
 sudo apt-get install libsuitesparse-dev
 cd ~
 git clone https://github.com/RainerKuemmerle/g2o
@@ -56,11 +58,6 @@ catkin_make
 - Install mavros
 
 ```
-sudo apt-get install ros-kinetic-geographic-msgs
-sudo apt-get install geographiclib-* ros-kinetic-geographic-*
-cd ~/Downloads
-wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
-./install_geographiclib_datasets.sh
 cd ~/lockheed_ws/src
 git clone https://github.com/mavlink/mavros.git
 cd mavros
