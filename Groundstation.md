@@ -56,6 +56,8 @@ catkin_make
 - Install mavros
 
 ```
+sudo apt-get install ros-kinetic-geographic-msgs
+sudo apt-get install geographiclib-* ros-kinetic-geographic-*
 cd ~/Downloads
 wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
 ./install_geographiclib_datasets.sh
