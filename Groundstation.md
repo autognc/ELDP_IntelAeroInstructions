@@ -56,6 +56,9 @@ catkin_make
 - Install mavros
 
 ```
+cd ~/Downloads
+wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
+./install_geographiclib_datasets.sh
 cd ~/lockheed_ws/src
 git clone https://github.com/mavlink/mavros.git
 cd mavros
