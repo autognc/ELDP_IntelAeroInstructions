@@ -94,7 +94,6 @@ git clone https://github.com/AkellaSummerResearch/batch_pose_estimator.git
 git clone https://github.com/AkellaSummerResearch/capture_waypoints.git
 git clone https://github.com/AkellaSummerResearch/yolo_triangulation.git
 git clone --recursive https://github.com/AkellaSummerResearch/darknet_ros.git
-git clone https://github.com/AkellaSummerResearch/vision_opencv.git
 git clone https://github.com/marcelinomalmeidan/image_filters.git 
 git clone https://github.com/marcelinomalmeidan/mapper.git
 git clone --recursive https://github.com/AkellaSummerResearch/p4_ros.git
