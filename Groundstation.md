@@ -21,7 +21,7 @@ sudo apt-get install libsuitesparse-dev
 cd ~
 git clone https://github.com/RainerKuemmerle/g2o
 mkdir g2o/build
-cd build
+cd g2o/build
 cmake ../
 make
 cd ~/lockheed_ws/src
