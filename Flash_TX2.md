@@ -100,6 +100,7 @@ sudo make install
 	- Download the ```buildLibrealsense2TX``` folder:
 
 	```
+	cd ~
 	git clone https://github.com/AkellaSummerResearch/buildLibrealsense2TX.git
 	```
 
