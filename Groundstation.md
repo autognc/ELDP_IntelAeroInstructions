@@ -89,7 +89,6 @@ sudo cmake --build . --target install
 ```
 cd ~/lockheed_ws/src
 git clone https://github.com/AkellaSummerResearch/tf_publisher
-git clone https://github.com/radionavlab/vicon.git
 git clone https://github.com/AkellaSummerResearch/batch_pose_estimator.git
 git clone https://github.com/AkellaSummerResearch/capture_waypoints.git
 git clone https://github.com/AkellaSummerResearch/yolo_triangulation.git
