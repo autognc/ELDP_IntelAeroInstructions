@@ -133,7 +133,7 @@ catkin_make
 	- Install ORB-SLAM2
 
 	```
-	sudo apt-get install libglew-dev
+	sudo apt-get install libglew-dev libxkbcommon-dev
 	cd ~
 	git clone https://github.com/stevenlovegrove/Pangolin.git
 	cd Pangolin
