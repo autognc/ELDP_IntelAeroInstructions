@@ -3,7 +3,7 @@ These are the instructions to install packages on the ground station desktop
 - Create catkin workspace
 
 ```
-mkdir -p ~/lockheed_ws
+mkdir -p ~/lockheed_ws/src
 cd ~/lockheed_ws
 catkin_make
 ```
