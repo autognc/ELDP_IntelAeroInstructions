@@ -16,7 +16,7 @@ source ~/lockheed_ws/devel/setup.bash
 
 - Install dependencies for min snap motion planner
 ```
-sudo apt-get install python-wstool python-catkin-tools ros-kinetic-cmake-modules
+sudo apt-get install python-wstool python-catkin-tools ros-kinetic-cmake-modules ros-kinetic-mavlink
 sudo apt-get install libsuitesparse-dev
 cd ~
 git clone https://github.com/RainerKuemmerle/g2o
