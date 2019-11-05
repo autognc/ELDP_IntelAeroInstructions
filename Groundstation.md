@@ -8,6 +8,11 @@ cd ~/lockheed_ws
 catkin_make
 ```
 
+- Add the workspace to `~/.bashrc`:
+
+```
+source ~/lockheed_ws/devel/setup.bash
+```
 
 - Install dependencies for min snap motion planner
 ```
