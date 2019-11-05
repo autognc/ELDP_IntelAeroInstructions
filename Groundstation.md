@@ -1,4 +1,4 @@
-These are the instructions to install packages on the ground station desktop
+These are the instructions to install packages on the ground station desktop. This instruction set assumes that you have already installed ROS Kinetic on the groundstation.
 
 - Create catkin workspace
 
@@ -16,7 +16,7 @@ source ~/lockheed_ws/devel/setup.bash
 
 - Install dependencies for min snap motion planner
 ```
-sudo apt-get install python-wstool python-catkin-tools ros-kinetic-cmake-modules ros-kinetic-mavros ros-kinetic-mavros-extras
+sudo apt-get install python-wstool python-catkin-tools ros-kinetic-cmake-modules
 sudo apt-get install libsuitesparse-dev
 cd ~
 git clone https://github.com/RainerKuemmerle/g2o
