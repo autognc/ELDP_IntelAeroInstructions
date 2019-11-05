@@ -11,7 +11,7 @@ catkin_make
 
 - Install dependencies for min snap motion planner
 ```
-sudo apt-get install python-wstool python-catkin-tools ros-kinetic-cmake-modules
+sudo apt-get install python-wstool python-catkin-tools ros-kinetic-cmake-modules ros-kinetic-mavros ros-kinetic-mavros-extras
 sudo apt-get install libsuitesparse-dev
 cd ~
 git clone https://github.com/RainerKuemmerle/g2o
@@ -46,17 +46,6 @@ catkin_make
 ```
 cd ~/lockheed_ws/src
 git clone https://github.com/AkellaSummerResearch/mav_trajectory_generation.git
-cd ~/lockheed_ws
-catkin_make
-```
-
-- Install the desired version of mavros
-
-```
-cd ~/lockheed_ws/src
-git clone https://github.com/mavlink/mavros.git
-cd ~/lockheed_ws/src/mavros
-git checkout 0.24.0
 cd ~/lockheed_ws
 catkin_make
 ```
