@@ -170,30 +170,3 @@ sudo make install
 	cd ~/catkin_ws
 	catkin_make -DCMAKE_BUILD_TYPE=Release
 	```
-
-	- Install ORB-SLAM2 (this is not within catkin_ws)
-
-	- Add the following line to ```~/.bashrc```:
-
-	```
-	export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:~/ORB_SLAM2/Examples/ROS
-	```	
-
-	- Install ORB-SLAM2
-
-	```
-	sudo apt-get install libglew-dev
-	cd ~
-	git clone https://github.com/stevenlovegrove/Pangolin.git
-	cd Pangolin
-	mkdir build
-	cd build
-	cmake ..
-	cmake --build .
-	cd ~
-	git clone https://github.com/marcelinomalmeidan/ORB_SLAM2
-	source ~/.bashrc
-	cd ORB_SLAM2
-	./build.sh
-	```
-
