@@ -11,7 +11,7 @@ catkin_make
 
 - Install dependencies for min snap motion planner
 ```
-sudo apt-get install python-wstool python-catkin-tools ros-kinetic-cmake-modules ros-kinetic-mavros
+sudo apt-get install python-wstool python-catkin-tools ros-kinetic-cmake-modules
 sudo apt-get install libsuitesparse-dev
 cd ~
 git clone https://github.com/RainerKuemmerle/g2o
