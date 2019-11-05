@@ -53,6 +53,18 @@ cd ~/lockheed_ws
 catkin_make
 ```
 
+- Install mavros
+
+```
+cd ~/lockheed_ws/src
+git clone https://github.com/mavlink/mavros.git
+cd mavros
+git checkout 0.24.0
+rm -rf mavros_extras
+cd ~/lockheed_ws
+catkin_make
+```
+
 - Install the desired version of px4_control
 
 ```
