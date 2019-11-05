@@ -35,8 +35,6 @@ catkin_make
 
 cd ~/lockheed_ws/src
 git clone https://github.com/AkellaSummerResearch/glog_catkin.git
-cd glog_catkin
-git checkout 314b53e 
 cd ~/lockheed_ws
 catkin_make
 
