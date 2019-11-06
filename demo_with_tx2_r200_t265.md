@@ -15,7 +15,7 @@ sudo aero-get-version.py
 roslaunch odom_relay sauron_mavros.launch
 ```
 
-2) px4_control + joystick relay (Intel Aero)
+2) px4_control + joystick relay (Groundstation)
 ```
 roslaunch px4_control sauron.launch
 ```
@@ -25,12 +25,12 @@ roslaunch px4_control sauron.launch
 roslaunch odom_relay sauron_t265.launch
 ```
 
-4) Joystick node (Desktop)
+4) Joystick node (Groundstation)
 ```
 roslaunch joy joy.launch
 ```
 
-5) rviz visualization (Desktop)
+5) rviz visualization (Groundstation)
 ```
 rviz -d ~/lockheed_ws/src/px4_control/Extras/SauronInspection.rviz
 ```
@@ -43,7 +43,7 @@ rviz -d ~/lockheed_ws/src/px4_control/Extras/SauronInspection.rviz
 roslaunch odom_relay r200_nodelet_rgbd.launch
 ```
 
-2) Record bag (TX2)
+2) Record bag (Intel Aero)
 
 ```
 rosbag record /Sauron/camera/color/image_raw_low_freq /Sauron/camera/depth_registered/image_raw -O r200_rover
@@ -102,24 +102,24 @@ roslaunch odom_relay inspection_no_t265.launch
 roslaunch odom_relay sauron_t265.launch
 ```
 
-3) px4_control + joystick relay (Intel Aero)
+3) px4_control + joystick relay (Groundstation)
 ```
 roslaunch px4_control sauron.launch
 ```
 
-4) Joystick node (Desktop)
+4) Joystick node (Groundstation)
 
 ```
 roslaunch joy joy.launch
 ```
 
-5) Rviz visualization (Desktop)
+5) Rviz visualization (Groundstation)
 
 ```
 rviz -d ~/lockheed_ws/src/px4_control/Extras/SauronInspection.rviz
 ```
 
-6) Mission planner (Desktop)
+6) Mission planner (Groundstation)
 
 ```
 roslaunch mission_planner rover_inspection.launch
@@ -137,19 +137,19 @@ roslaunch odom_relay inspection_no_t265.launch
 roslaunch odom_relay sauron_t265.launch
 ```
 
-3) Joystick node (Desktop)
+3) Joystick node (Groundstation)
 
 ```
 roslaunch joy joy.launch
 ```
 
-4) Rviz visualization (Desktop)
+4) Rviz visualization (Groundstation)
 
 ```
 rviz -d ~/lockheed_ws/src/px4_control/Extras/SauronInspection.rviz
 ```
 
-5) Mission planner (Desktop)
+5) Mission planner (Groundstation)
 
 ```
 roslaunch mission_planner mapper_inspection.launch
@@ -167,24 +167,24 @@ roslaunch odom_relay inspection_no_t265.launch
 roslaunch odom_relay sauron_t265.launch
 ```
 
-3) px4_control + joystick relay (Intel Aero)
+3) px4_control + joystick relay (Groundstation)
 ```
 roslaunch px4_control sauron.launch
 ```
 
-4) Joystick node (Desktop)
+4) Joystick node (Groundstation)
 
 ```
 roslaunch joy joy.launch
 ```
 
-5) Rviz visualization (Desktop)
+5) Rviz visualization (Groundstation)
 
 ```
 rviz -d ~/lockheed_ws/src/px4_control/Extras/SauronInspection.rviz
 ```
 
-6) Mission planner (Desktop)
+6) Mission planner (Groundstation)
 
 ```
 roslaunch mission_planner collision_avoidance_example.launch
