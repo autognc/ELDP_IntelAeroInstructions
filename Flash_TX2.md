@@ -132,6 +132,7 @@ sudo make install
 	- Source the catkin folder by adding the following to the end of ```~/.bashrc```
 	
 	```
+	source /opt/ros/kinetic/setup.bash
 	source ~/catkin_ws/devel/setup.bash
 	```
 
