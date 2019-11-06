@@ -49,6 +49,8 @@ roslaunch odom_relay r200_nodelet_rgbd.launch
 rosbag record /Sauron/camera/color/image_raw_low_freq /Sauron/camera/depth_registered/image_raw -O r200_rover
 ```
 
+Press Ctrl+C to stop recording the bag.
+
 ## Create map with ORB_SLAM2
 
 1) Run ORB_SLAM2
@@ -85,6 +87,8 @@ roslaunch capture_waypoints capture.launch
 ```
 rosbag play r200_rover.bag
 ```
+
+- Capture waypoints following the instruction in the `capture_waypoints` terminal. As the waypoint capturing ends, it will save the waypoints into a file `wps.txt`. This has to be copied into the mission planner in the groundstation. Copy it into `mission_planner/waypoints/wps_r200.txt`. 
 
 ## Run Mission Planner Inspection
 
