@@ -139,11 +139,12 @@ sudo make install
 	- Download the ```installRealSenseROSTX2``` folder and install realsense's ROS packages:
 
 	```
+	sudo apt-get install ros-kinetic-ddynamic-reconfigure
 	git clone https://github.com/AkellaSummerResearch/installRealSenseROSTX2.git
 	cd installRealSenseROSTX2
 	./installRealSenseROS.sh
 	cd ~/catkin_ws/src
-	git clone https://github.com/AkellaSummerResearch/realsense.git
+	git clone https://github.com/autognc/realsense-ros.git
 	cd ~/catkin_ws
 	catkin_make -DCMAKE_BUILD_TYPE=Release
 	```
