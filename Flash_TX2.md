@@ -145,6 +145,8 @@ sudo make install
 	./installRealSenseROS.sh
 	cd ~/catkin_ws/src
 	git clone https://github.com/autognc/realsense-ros.git
+	cd realsense-ros
+	git checkout 2.2.8
 	cd ~/catkin_ws
 	catkin_make -DCMAKE_BUILD_TYPE=Release
 	```
