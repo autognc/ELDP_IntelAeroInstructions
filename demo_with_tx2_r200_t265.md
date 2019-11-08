@@ -157,9 +157,9 @@ roslaunch mission_planner mapper_inspection.launch
 
 ## Run Mission Planner Collision Avoidance
 
-1) Mavros + R200 + ORB_SLAM2 + Portrait Mode (Intel Aero)
+1) Mavros + R200 (Intel Aero)
 ```
-roslaunch odom_relay inspection_no_t265.launch
+roslaunch odom_relay collision_avoidance_no_t265.launch
 ```
 
 2) T265 (TX2)
@@ -181,7 +181,7 @@ roslaunch joy joy.launch
 5) Rviz visualization (Groundstation)
 
 ```
-rviz -d ~/lockheed_ws/src/px4_control/Extras/SauronInspection.rviz
+rviz -d  ~/lockheed_ws/src/px4_control/Extras/SauronColsionAvoidance.rviz
 ```
 
 6) Mission planner (Groundstation)
