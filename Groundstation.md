@@ -1,5 +1,11 @@
 These are the instructions to install packages on the ground station desktop. This instruction set assumes that you have already installed ROS Kinetic on the groundstation.
 
+- Disable firewall on the Groundstation (it prevents ROS nodes from communicating)
+
+```
+sudo ufw disable
+```
+
 - Create catkin workspace
 
 ```
