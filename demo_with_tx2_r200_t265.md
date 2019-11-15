@@ -181,11 +181,11 @@ roslaunch joy joy.launch
 5) Rviz visualization (Groundstation)
 
 ```
-rviz -d  ~/lockheed_ws/src/px4_control/Extras/SauronColsionAvoidance.rviz
+rviz -d  ~/lockheed_ws/src/px4_control/Extras/SauronCollisionAvoidance.rviz
 ```
 
 6) Mission planner (Groundstation)
 
 ```
-roslaunch mission_planner collision_avoidance_example.launch
+roslaunch mission_planner collision_avoidance_demo.launch
 ```
