@@ -125,6 +125,27 @@ rviz -d ~/lockheed_ws/src/px4_control/Extras/SauronInspection.rviz
 roslaunch mission_planner rover_inspection.launch
 ```
 
+## Run Inspection using ground rover
+
+Setup TX2 following the same steps as the drone setup instructions. Record bags, build ORB_SLAM maps and capture waypoints as instructed above but using the TARS rover instead of the drone. Install ROS and download package from https://github.com/autognc/tars_control into the catkin worspace and compile.
+
+1) Rover Motion Control (Rapsberry Pi)
+```
+rosrun tars_control polynomialControl
+```
+2) Realsense Camera (TX2)
+```
+roslaunch realsense2_camera rs_slam_ns.launch
+```
+3) ORB_SLAM (TX2)
+```
+roslaunch ORB_SLAM2 rgbd_ns_no_visualization.launch
+```
+4) Mission Planner (Groundstation)
+```
+roslaunch mission_planner gollum.launch
+
+
 ## Map the environment (for collision avoidance)
 
 1) Mavros + R200 + ORB_SLAM2 + Portrait Mode (Intel Aero)
