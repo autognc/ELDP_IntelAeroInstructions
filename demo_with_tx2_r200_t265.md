@@ -144,7 +144,7 @@ roslaunch ORB_SLAM2 rgbd_ns_no_visualization.launch
 4) Mission Planner (Groundstation)
 ```
 roslaunch mission_planner gollum.launch
-
+```
 
 ## Map the environment (for collision avoidance)
 
